@@ -5,6 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
+    <link href="StyleSheet.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
@@ -12,7 +13,7 @@
             width: 700px;
             height: 150px;
             margin-left:300px;
-            background-color: #99CCFF;
+            background-color: #CB272C;
         }
         .auto-style2 {
             width: 700px;
@@ -21,21 +22,43 @@
         }
         .auto-style3{
             width: 700px;
-            height: 20px;
+            height: 40px;
             margin-left:300px;
-            background-color: #FFCCCC;
+            background-color: #FFFFFF;
         }
-        .auto-style4{
+        .auto-style6 {
+            width: 100%;
+            background-color: #FFFFFF;
+            height: 38px;
+        }
+        .auto-style7 {
+            text-align: center;
+            height: 26px;
+            background-color:#fa9797;
+        }
+        .auto-style8 {
+            width: 700px;
+            height: 300px;
+            margin-left:300px;
+            background-color: #FFFFFF;
+        }
+         .auto-style9 {
             width: 200px;
-            height: 200px;
-            margin-left:300px;
-            background-color: #CCFF99;
-        }
-        .auto-style5{
+            height: auto;
+            background-color: #CB272C;
+            float:left;
+         }
+         .auto-style10 {
             width: 450px;
-            height: 350px;
+            height: auto;
+            background-color: #CB272C;
             margin-left:250px;
-            background-color: #CC66FF;
+         }
+        .auto-style11 {
+            font-size: large;
+        }
+        .auto-style12 {
+            margin-left: 0px;
         }
     </style>
 </head>
@@ -43,10 +66,33 @@
     <form id="form1" runat="server">
         <div class="auto-style1"></div>
         <div class="auto-style2"></div>
-        <div class="auto-style3"></div>
+        <div class="auto-style3">
+            <table class="auto-style6">
+                <tr>
+                    <td class="auto-style7"><a href="AnaSayfa.aspx">ANA SAYFA</a></td>
+                    <td class="auto-style7"><a href="GununYemegi.aspx">GÜNÜN YEMEĞİ</a></td>
+                    <td class="auto-style7"><a href="tarifoner.aspx">TARİF ÖNER</a></td>
+                    <td class="auto-style7"><a href="Hakkimizda.aspx">HAKKIMIZDA</a></td>
+                    <td class="auto-style7"><a href="iletisim.aspx">İLETİŞİM</a></td>
+                </tr>
+            </table>
+        </div>
         <div class="auto-style2"></div>
-        <div class="auto-style4">
-              <div class="auto-style5">
+        <div class="auto-style8">
+              <div class="auto-style9">
+                  <strong><span class="auto-style11">KATEGORİLER</span><br class="auto-style11" />
+                  </strong>
+                  <asp:DataList ID="DataList1" runat="server" CssClass="auto-style12" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" Width="199px">
+                      <ItemTemplate>
+                          <div style="border: thin solid #C0C0C0">
+                              <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAdı") %>'></asp:Label>
+                              (
+                              <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
+                              )</div>
+                      </ItemTemplate>
+                  </asp:DataList>
+              </div>
+              <div class="auto-style10">
                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
 
                   </asp:ContentPlaceHolder>

@@ -8,20 +8,15 @@ using System.Data.SqlClient;
 
 namespace YemekTarifiWebSitesi
 {
-    public partial class Kullanici : System.Web.UI.MasterPage
+    public partial class GununYemegi : System.Web.UI.Page
     {
         sqlsinif bgl = new sqlsinif();
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Select * From Kategoriler", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("Select * From GununYemegi", bgl.baglanti());
             SqlDataReader oku = komut.ExecuteReader();
-            DataList1.DataSource = oku;
-            DataList1.DataBind();
-        }
-
-        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
+            DataList2.DataSource = oku;
+            DataList2.DataBind();
         }
     }
 }
