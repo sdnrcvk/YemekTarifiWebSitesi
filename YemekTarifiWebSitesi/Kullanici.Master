@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-    <link href="StyleSheet.css" rel="stylesheet" />
+    <link href="Kullanici.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
@@ -64,7 +64,9 @@
 </head>
 <body style="height: 576px">
     <form id="form1" runat="server">
-        <div class="auto-style1"></div>
+        <div class="auto-style1">
+            <asp:Image ID="Image1" runat="server" Height="151px" ImageUrl="~/banner img/AbdullaBinKhater_slider1.jpg" Width="699px" />
+        </div>
         <div class="auto-style2"></div>
         <div class="auto-style3">
             <table class="auto-style6">
@@ -85,7 +87,7 @@
                   <asp:DataList ID="DataList1" runat="server" CssClass="auto-style12" OnSelectedIndexChanged="DataList1_SelectedIndexChanged" Width="199px">
                       <ItemTemplate>
                           <div style="border: thin solid #C0C0C0">
-                              <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAdı") %>'></asp:Label>
+                              <a href= "KategoriDetay.aspx?Kategoriid=<%#Eval("KategoriId") %>"><asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></a></asp:Label>
                               (
                               <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
                               )</div>

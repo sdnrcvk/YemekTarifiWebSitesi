@@ -67,17 +67,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.aspx" />
     <Content Include="AnaSayfa.aspx" />
+    <Content Include="banner img\AbdullaBinKhater_slider1.jpg" />
+    <Content Include="banner img\florya-basak-yemek-header-1600x925.jpg" />
+    <Content Include="banner img\network-security-e1584050859986.jpg" />
     <Content Include="GununYemegi.aspx" />
     <Content Include="Hakkimizda.aspx" />
-    <Content Include="iletisim.aspx" />
+    <Content Include="icon img\delete.png" />
+    <Content Include="icon img\update.png" />
+    <Content Include="Iletisim.aspx" />
+    <Content Include="img\1549101161.jpg" />
     <Content Include="img\mucver.jpg" />
-    <Content Include="style.css" />
-    <Content Include="StyleSheet.css" />
-    <Content Include="tarifoner.aspx" />
+    <Content Include="KategoriDuzenle.aspx" />
+    <Content Include="KategoriDetay.aspx" />
+    <Content Include="Kategoriler.aspx" />
+    <Content Include="Kullanici.css" />
+    <Content Include="TarifOner.aspx" />
     <Content Include="Web.config" />
+    <Content Include="YemekDetay.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="AnaSayfa.aspx.cs">
       <DependentUpon>AnaSayfa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -99,12 +123,33 @@
     <Compile Include="Hakkimizda.aspx.designer.cs">
       <DependentUpon>Hakkimizda.aspx</DependentUpon>
     </Compile>
-    <Compile Include="iletisim.aspx.cs">
-      <DependentUpon>iletisim.aspx</DependentUpon>
+    <Compile Include="Iletisim.aspx.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="iletisim.aspx.designer.cs">
-      <DependentUpon>iletisim.aspx</DependentUpon>
+    <Compile Include="Iletisim.aspx.designer.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.designer.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.designer.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
     </Compile>
     <Compile Include="Kullanici.Master.cs">
       <DependentUpon>Kullanici.Master</DependentUpon>
@@ -115,16 +160,25 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sqlsinif.cs" />
-    <Compile Include="tarifoner.aspx.cs">
-      <DependentUpon>tarifoner.aspx</DependentUpon>
+    <Compile Include="TarifOner.aspx.cs">
+      <DependentUpon>TarifOner.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="tarifoner.aspx.designer.cs">
-      <DependentUpon>tarifoner.aspx</DependentUpon>
+    <Compile Include="TarifOner.aspx.designer.cs">
+      <DependentUpon>TarifOner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YemekDetay.aspx.cs">
+      <DependentUpon>YemekDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YemekDetay.aspx.designer.cs">
+      <DependentUpon>YemekDetay.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Kullanici.Master" />
+    <Content Include="banner img\10666-21_Homemade_Baby_Food_Recipes_1296x728-header.webp" />
+    <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

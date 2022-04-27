@@ -11,7 +11,7 @@ namespace YemekTarifiWebSitesi
 {
 
 
-    public partial class AnaSayfa
+    public partial class KategoriDetay
     {
 
         /// <summary>
