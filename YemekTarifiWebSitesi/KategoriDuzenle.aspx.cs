@@ -32,7 +32,7 @@ namespace YemekTarifiWebSitesi
 
         protected void BtnGuncelle_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("update Kategoriler Set KategoriAd=@p1, KategoriAdet=@p2 Where KategoriId=@p3", bgl.baglanti());
+            SqlCommand komut = new SqlCommand("Update Kategoriler Set KategoriAd=@p1, KategoriAdet=@p2 Where KategoriId=@p3", bgl.baglanti());
             komut.Parameters.AddWithValue("@p1", TextBox1.Text);
             komut.Parameters.AddWithValue("@p2", TextBox2.Text);
             komut.Parameters.AddWithValue("@p3", id);
